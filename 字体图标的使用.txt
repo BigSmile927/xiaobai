@@ -1,0 +1,15 @@
+1.进入阿里图标官网http://iconfont.cn/搜索自己想要的图标。
+2.如这里需要一个购物车的图标，流程为： 搜索“购物车”图标 --->  点击“添加入库（购物车-添加至项目-我的项目-下载到本地）
+3.进入https://transfonter.org/平台，将解压出来的ttf字体文件转化成base64格式（仅需勾选ttf），点击下载，得到转换后的压缩包，名为transfonter.org-开头。
+
+在微信小程序中：
+1.
+在index.css文件中添加样式内容。打开刚刚我们经过转换的解压出来的文件，找到stylesheet.css，将其中的内容全部复制到index.css文件中。注意是转换过的那个文件。
+2.
+打开没有转换过的download.zip解压出来的文件，找到iconfont.css文件，将除了 @font-face 部分的内容复制到index.css文件中
+3.
+在index.wxml中使用字体图标。
+ <view class="container">
+ 个人中心
+ <text class="iconfont icon-wode" style="font-size:50px;color:red"></text>
+ </view>
