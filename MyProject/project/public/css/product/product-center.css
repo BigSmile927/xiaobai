@@ -1,0 +1,303 @@
+*,
+ul {
+    margin : 0 0;
+    padding: 0 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul,
+li {
+    list-style: none;
+}
+
+/* 头部分 */
+.pro-head .container .row>div {
+    margin-top   : 40px;
+    margin-bottom: 40px;
+    text-align   : center;
+}
+
+.pro-head .container .row>div .nav-uu {
+    text-align: center;
+    display   : inline-block;
+}
+
+.pro-head .container .row>div .nav-uu li {
+    float           : left;
+    width           : 110px;
+    height          : 40px;
+    line-height     : 40px;
+    text-align      : center;
+    margin-left     : 10px;
+    margin-right    : 10px;
+    margin-bottom   : 0px;
+    background-color: #e9e9e9;
+}
+.pro-head .container .row>div .nav-uu .aa{
+    background-color: #00509c;
+}
+.pro-head .container .row>div .nav-uu .aa a{
+    color: white;
+}
+.pro-head .container .row>div .nav-uu li:hover {
+    background-color: #00509c;
+}
+
+.pro-head .container .row>div .nav-uu li a {
+    display        : block;
+    width          : 100%;
+    height         : 100%;
+    color          : #676767;
+    text-decoration: none;
+}
+
+.pro-head .container .row>div .nav-uu li:hover>a {
+    color: #ffff;
+}
+
+@media screen and (max-width: 768px) {
+    .pro-head .container {
+        padding: 0;
+    }
+
+    .pro-head .container .row {
+        padding      : 0;
+        margin-left  : 0;
+        margin-right : 0;
+        margin-top   : 20px;
+        margin-bottom: 25px;
+    }
+
+    .pro-head .container .row>div {
+        margin       : 0;
+        padding-left : 15px;
+        padding-right: 8px;
+    }
+
+    .pro-head .container .row>div .nav-uu {
+        list-style: none;
+        text-align: center !important;
+        display   : inline-block;
+        width     : 100%;
+    }
+
+    .pro-head .container .row>div .nav-uu li {
+        float           : left;
+        text-align      : center;
+        width           : 49%;
+        margin-left     : 0;
+        margin-right    : 1%;
+        margin-bottom   : 1%;
+        background-color: #e9e9e9;
+
+    }
+}
+
+
+/* 身体部分 */
+.container .row .product>div {
+    padding      : 20px;
+    margin-bottom: 30px;
+}
+
+.container .row .product>div:hover {
+    border    : 1px solid #00509c;
+    box-shadow: 0px 5px 5px 2px rgba(205, 205, 205, .6);
+}
+
+.container .row .product .thumbnail>div {
+    padding: 20px;
+}
+
+.container .row .product .thumbnail>div .div1 {
+    height     : 25px;
+    line-height: 25px;
+}
+
+.container .row .product .thumbnail>div .div1 a {
+    font-size      : 16px;
+    color          : #333;
+    text-decoration: none;
+}
+
+.container .row .product .thumbnail>div .div2 {
+    height: 50px;
+}
+
+.container .row .product .thumbnail>div .div2 a {
+    font-size      : 14px;
+    color          : #999;
+    text-decoration: none;
+}
+.container .row .product .aa img{
+    transform: scale(1.1,1.1);
+    transition: all 0.5s;
+}
+.container .row .product .bb img{
+    transform: scale(1,1);
+    transition: all 0.5s;
+}
+.container .row .product .thumbnail:hover >div .div1>a{
+    color: #00509c;
+}
+.container .row .product .thumbnail>a{
+    display: inline-block;
+    overflow: hidden;
+}
+.container .row .product .thumbnail>a>img{
+    max-width: none;
+    width: 100%;
+}
+.container .row .product .thumbnail>div .div3 {
+    width              : 60px;
+    height             : 24px;
+    background-image   : url("../../images/箭头.png");
+    background-position: center center;
+    background-repeat  : no-repeat;
+    position           : relative;
+    top                : 0px;
+    left               : 0px;
+}
+
+.container .row .product .thumbnail>div .div3 a {
+    display        : inline-block;
+    text-decoration: none;
+    width          : 100%;
+    height         : 100%;
+}
+
+.container .row .product .thumbnail>img{
+    cursor: pointer;
+}
+
+@media screen and (min-width:1200px) {
+    .container {
+        width  : 1200px;
+        padding: 0;
+    }
+}
+
+
+
+
+
+
+/* 分页部分 */
+.paging-2{
+    display: none;
+}
+.paging{
+    margin-top: 10px;
+}
+.paging .paging-uu {
+    list-style: none;
+    text-align: center;
+}
+
+.paging .paging-uu li {
+    font-size  : 12px;
+    display    : inline-block;
+    line-height: 33px;
+    border     : 1px solid #ddd;
+    padding    : 3px 5px;
+    margin     : 0px 0px;
+    cursor     : pointer;
+}
+
+.paging .paging-uu li a {
+    padding: 0 7px;
+    color  : #676767;
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+}
+
+.paging .paging-uu li:hover>a {
+    text-decoration: none;
+}
+.paging .paging-uu .pag-mr {
+    background-color: #00509c;
+}
+.paging .paging-uu .pag-mrg {
+    background-color: white;
+}
+.paging .paging-uu .pag-mrg:hover{
+    background-color: #288df0;
+}
+.paging .paging-uu .pag-mr a{
+    color: #ffff;
+}
+.paging .paging-uu .pag-mrg a{
+    color: black;
+}
+.paging .paging-uu .pag-mrg:hover a{
+    color: white;
+}
+.paging .paging-uu .pag:hover {
+    background-color: #00509c;
+}
+.paging .paging-uu .pag:hover>.fy {
+    text-decoration: none;
+    color          : #ffff;
+}
+.paging .paging-uu .pag-2:hover {
+    background-color: #288df0;
+}
+.paging .paging-uu .pag-2:hover>.fy {
+    text-decoration: none;
+    color          : #ffff;
+}
+
+@media screen and (max-width:768px) {
+    .paging{
+        display: none;
+    }
+    .paging-2{
+        display: block;
+        width: 30%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 10px;
+        background-color: #00509c;
+        font-size: 12px;
+        line-height: 35px;
+        border-radius: 3px;
+    }
+    .paging-2 input{
+        outline: 0;
+        border: 0;
+        outline: 0;
+        width: 100%;
+        height: 100%;
+        background-color: transparent;
+        cursor: pointer;
+        color: #ffff;
+    }
+    /* 呜呜呜 */
+    .container>.row>.product>.thumbnail{
+        padding: 0;
+        border: 0;
+    }
+    .container>.row>.product>.thumbnail>div{
+        padding: 0;
+    }
+    .container>.row>.product>.thumbnail>div>.div1>a>span{
+        font-size: 14px;
+        color: #666;
+    }
+    .container>.row>.product>.thumbnail>div>.div2{
+        display: none;
+    }
+    .container>.row>.product>.thumbnail>div>.div3{
+        display: none;
+    }
+    .container .row .product>div:hover {
+        border    : 0;
+        box-shadow: none;
+    }
+    
+}
+

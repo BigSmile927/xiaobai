@@ -1,0 +1,191 @@
+.cbody {
+  padding: 0;
+  background-color: #f7f7f7;
+}
+.cbody .container {
+  padding: 0;
+}
+.cbody .container > .row {
+  padding-top: 30px;
+  margin: 0;
+}
+.cbody .container > .row .left {
+  padding: 0;
+}
+.cbody .container > .row .left .row {
+  margin: 0;
+}
+.cbody .container > .row .left .row .left-1 {
+  padding-left: 10px;
+  padding-right: 10px;
+  width: 100%;
+  color: #484848;
+  font-size: 15px;
+  font-weight: bold;
+  text-align: center;
+  left: 0px;
+  line-height: normal;
+}
+.cbody .container > .row .left .row .left-2 {
+  padding-left: 0px;
+  text-align: center;
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+  border-bottom-color: #e9e9e9;
+  padding-bottom: 20px;
+  color: #8a8a8a;
+  font-size: 12px;
+  line-height: 25px;
+}
+.cbody .container > .row .left .row .left-3 {
+  padding: 0 10px;
+  margin-top: 10px;
+}
+.cbody .container > .row .left .row .left-3 P {
+  line-height: 25px;
+  color: #666;
+  margin: 0;
+}
+.cbody .container > .row .left .row .left-3 hr {
+  margin: 0;
+  box-sizing: content-box;
+  height: 0;
+  border-color: #666;
+}
+.cbody .container > .row .left .row .left-4 {
+  padding: 0 10px;
+  margin: 20px 0;
+}
+.cbody .container > .row .left .row .left-4 .item {
+  display: inline-block;
+  width: 100%;
+  line-height: 30px;
+}
+.cbody .container > .row .left .row .left-4 .item a {
+  color: #666;
+  text-decoration: none;
+  cursor: pointer;
+}
+.cbody .container > .row .left .row .left-4 .item a:hover {
+  color: #00509c;
+}
+@media screen and (min-width: 992px) {
+  .cbody .container > .row .left .row .left-1 {
+    text-align: left;
+    color: #00509c;
+    font-size: 18px;
+    padding-bottom: 10px;
+    padding-left: 0px;
+  }
+  .cbody .container > .row .left .row .left-2 {
+    text-align: left;
+    padding-top: 5px;
+  }
+  .cbody .container > .row .left .row .left-3 {
+    padding-left: 0;
+  }
+  .cbody .container > .row .left .row .left-4 {
+    padding-left: 0;
+  }
+}
+@media screen and (min-width: 768px) {
+  .cbody .container > .row .left {
+    margin-bottom: 20px;
+    margin-right: 20px;
+    padding-bottom: 20px;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-top: 40px;
+    max-width: 870px;
+    background-color: #ffffff;
+  }
+}
+@media screen and (min-width: 992px) {
+  .cbody .container > .row .left {
+    max-width: 700px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .cbody .container > .row .left {
+    max-width: 850px;
+  }
+}
+.cbody .container > .row .right {
+  padding: 0;
+  background-color: #ffffff;
+}
+.cbody .container > .row .right .row {
+  margin: 0;
+}
+.cbody .container > .row .right .row .top {
+  padding: 0 10px;
+}
+.cbody .container > .row .right .row .top p {
+  color: #00509c;
+  font-size: 18px;
+  font-weight: bold;
+}
+@media screen and (min-width: 992px) {
+  .cbody .container > .row .right .row .top {
+    padding-left: 16px;
+    line-height: 50px;
+  }
+  .cbody .container > .row .right .row .top p {
+    color: #484848;
+    font-size: 16px;
+    margin: 0;
+  }
+}
+.cbody .container > .row .right .row .right-1 {
+  padding: 0;
+}
+.cbody .container > .row .right .row .right-1 .r1 {
+  margin-left: 3%;
+  width: 94%;
+  height: auto;
+}
+.cbody .container > .row .right .row .right-1 .r1 a {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+.cbody .container > .row .right .row .right-1 .r1 a img {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+.cbody .container > .row .right .row .right-1 .r2 {
+  margin-top: 5px;
+  padding: 0 10px;
+}
+.cbody .container > .row .right .row .right-1 .r2 a {
+  text-decoration: none;
+  color: #484848;
+}
+.cbody .container > .row .right .row .right-1 .r3 {
+  padding: 0 10px;
+  font-size: 12px;
+  line-height: 20px;
+  color: #8a8a8a;
+}
+@media screen and (min-width: 992px) {
+  .cbody .container > .row .right .row .right-1 {
+    margin-bottom: 20px;
+    border: 10px solid white;
+  }
+  .cbody .container > .row .right .row .right-1 .r2 {
+    padding: 20px 20px 5px 20px;
+  }
+  .cbody .container > .row .right .row .right-1 .r2 a span {
+    font-weight: bold;
+  }
+  .cbody .container > .row .right .row .right-1 .r2 a:hover {
+    color: #00509c;
+  }
+  .cbody .container > .row .right .row .right-1 .r3 {
+    padding: 0 20px;
+  }
+  .cbody .container > .row .right .row .mar {
+    margin-top: 20px;
+  }
+}

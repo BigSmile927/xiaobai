@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>联系我们-广东新创意科技有限公司</title>
+    <link rel="shortcut icon" href="../public/images/logo.ico" />
+    <link rel="stylesheet" href="../public/css/bootstrap.css">
+    <link rel="stylesheet" href="../public/css/contact/contact-us.css">
+    <script type="text/javascript" src="http://api.map.baidu.com/api?key=&v=1.1&services=true"></script>
+    <!-- 头部样式 -->
+    <link rel="stylesheet" href="../public/css/header/header.css">
+    <!-- 脚步样式 -->
+    <link rel="stylesheet" href="../public/css/footer/footer.css">
+    <link rel="stylesheet" href="../public/css/iconfont2.css">
+    <!--[if lt IE 9]>
+      <script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+    {{include './header.html'}}
+    <!-- 头部分 -->
+    <div class="pro-head">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12">
+                    <ul class="nav-uu">
+                        <li><a href="contactus2"><span>联系我们</span></a></li>
+                        <li><a href="contactSt"><span>职位招聘</span></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 身体部分 -->
+    <div class="section">
+        <div class="row">
+            <!-- 左边模块 -->
+            <div class="Left col-xs-12 col-sm-6">
+                <!-- L1 -->
+                <div class="row">
+                    <div class="L1-a col-xs-12 col-lg-12">
+                        <div class="L1-1"><span>广东新创意科技有限公司</span></div>
+                        <div class="L1-2"><span>—</span></div>
+                    </div>
+                </div>
+                <!-- L2 -->
+                <div class="row">
+                    <div class="La col-xs-1 col-lg-1">
+                        <div><img src="../public/images/us-1.png" alt=""></div>
+                    </div>
+                    <div class="Lb col-xs-11 col-lg-11">
+                        <div><span>咨询热线：020-38457012</span></div>
+                    </div>
+                </div>
+                <!-- L3 -->
+                <div class="row">
+                    <div class="La col-xs-1 col-lg-1">
+                        <div><img src="../public/images/us-2.png" alt=""></div>
+                    </div>
+                    <div class="Lb col-xs-11 col-lg-11">
+                        <div><span>图文传真：020-38457025</span></div>
+                    </div>
+                </div>
+                <!-- L4 -->
+                <div class="row">
+                    <div class="La col-xs-1 col-lg-1">
+                        <div><img src="../public/images/us-3.png" alt=""></div>
+                    </div>
+                    <div class="Lb col-xs-11 col-lg-11">
+                        <div><span>业务邮箱：a01@863cn.com</span></div>
+                    </div>
+                </div>
+                <!-- L5 -->
+                <div class="row">
+                    <div class="La col-xs-1 col-lg-1">
+                        <div><img src="../public/images/us-4.png" alt=""></div>
+                    </div>
+                    <div class="Lb col-xs-11 col-lg-11">
+                        <div><span>邮编：510630</span></div>
+                    </div>
+                </div>
+                <!-- L6 -->
+                <div class="row">
+                    <div class="Lc col-xs-12">
+                        <div>
+                            <span>
+                                <p>总部地址：中国 · 广州 · 天河 · 东莞庄一横路116号广东生产力大厦101-103室</p>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <!-- L7 -->
+                <div class="row">
+                    <div class="Lc col-xs-12">
+                        <div class="">
+                            <span>
+                                <p>分公司：中国 广东 肇庆四会大旺高新区兴隆一街1号荣仕宝科技园A座1、2楼</p>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- 右边模块 -->
+            <div class="Right col-xs-12 col-sm-6">
+                <!-- 上部分 -->
+                <div class="Ra row">
+                    <div class="col-xs-12">
+                        <div><span>在线留言</span></div>
+                    </div>
+                </div>
+                <!-- 下部分 -->
+                <div class="Rb row">
+                    <div class="col-xs-12">
+                        <div>
+                            <div>
+                                <input id="name" type="text" placeholder="请输入姓名">
+                                <span id="name-s"></span>
+                            </div>
+                            <div>
+                                <input id="shouji" type="text" placeholder="请输入手机">
+                            </div>
+                            <div>
+                                <input id="email" type="text" placeholder="请输入邮箱">
+                            </div>
+                            <div>
+                                <textarea id="neirong" placeholder="请输入内容"></textarea>
+                            </div>
+                            <div class="anniu">
+                                <input id="btn" class="ipt" type="button" value="提交">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <!-- 地图部分 -->
+    <div class="map">
+        <div class="row">
+            <div class="col-xs-12">
+                <div id="dituContent" style="width: 100%;height: 400px;">
+                </div>
+            </div>
+        </div>
+    </div>
+    {{include './footer.html'}}
+    <!-- jQuery (Bootstrap 的所有 JavaScript 插件都依赖 jQuery，所以必须放在前边) -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@1.12.4/dist/jquery.min.js"
+        integrity="sha384-nvAa0+6Qg9clwYCGGPpDQLVpLNn0fRaROjHqs13t4Ggj3Ez50XnGQqc/r8MhnRDZ"
+        crossorigin="anonymous"></script>
+    <!-- 加载 Bootstrap 的所有 JavaScript 插件。你也可以根据需要只加载单个插件。 -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"
+        integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd"
+        crossorigin="anonymous"></script>
+    <script src="../public/js/header1.js"></script>
+
+</body>
+<script>
+    var $a = $(".navbar-nav>li>a");
+    $a.attr("class", "");
+    $("#05").attr("class", "activee");
+</script>
+<script>
+    //创建和初始化地图函数：
+    function initMap() {
+        createMap();//创建地图
+        setMapEvent();//设置地图事件
+        addMapControl();//向地图添加控件
+        addMarker();//向地图中添加marker
+    }
+
+    //创建地图函数：
+    function createMap() {
+        var map = new BMap.Map("dituContent");//在百度地图容器中创建一个地图
+        var point = new BMap.Point(113.360386, 23.160235);//定义一个中心点坐标
+        map.centerAndZoom(point, 15);//设定地图的中心点和坐标并将地图显示在地图容器中
+        window.map = map;//将map变量存储在全局
+    }
+
+    //地图事件设置函数：
+    function setMapEvent() {
+        map.enableDragging();//启用地图拖拽事件，默认启用(可不写)
+        map.enableScrollWheelZoom();
+        map.enableDoubleClickZoom();
+        map.enableKeyboard();
+    }
+
+    //地图控件添加函数：
+    function addMapControl() {
+        //向地图中添加缩放控件
+        var ctrl_nav = new BMap.NavigationControl({ anchor: BMAP_ANCHOR_TOP_LEFT, type: BMAP_NAVIGATION_CONTROL_LARGE });
+        map.addControl(ctrl_nav);
+        //向地图中添加缩略图控件
+        var ctrl_ove = new BMap.OverviewMapControl({ anchor: BMAP_ANCHOR_BOTTOM_RIGHT, isOpen: 1 });
+        map.addControl(ctrl_ove);
+        //向地图中添加比例尺控件
+        var ctrl_sca = new BMap.ScaleControl({ anchor: BMAP_ANCHOR_BOTTOM_LEFT });
+        map.addControl(ctrl_sca);
+    }
+
+    //标注点数组
+    var markerArr = [{ title: "广东新创意科技有限公司", content: "地址:	中国 · 广州 · 天河 · 东莞庄一横路116号广东生产力大厦101-103室", point: "113.346049|23.15565", isOpen: 0, icon: { w: 21, h: 21, l: 0, t: 0, x: 6, lb: 5 } }
+    ];
+    //创建marker
+    function addMarker() {
+        for (var i = 0; i < markerArr.length; i++) {
+            var json = markerArr[i];
+            var p0 = json.point.split("|")[0];
+            var p1 = json.point.split("|")[1];
+            var point = new BMap.Point(p0, p1);
+            var iconImg = createIcon(json.icon);
+            var marker = new BMap.Marker(point, { icon: iconImg });
+            var iw = createInfoWindow(i);
+            var label = new BMap.Label(json.title, { "offset": new BMap.Size(json.icon.lb - json.icon.x + 10, -20) });
+            marker.setLabel(label);
+            map.addOverlay(marker);
+            label.setStyle({
+                borderColor: "#808080",
+                color: "#333",
+                cursor: "pointer"
+            });
+
+            (function () {
+                var index = i;
+                var _iw = createInfoWindow(i);
+                var _marker = marker;
+                _marker.addEventListener("click", function () {
+                    this.openInfoWindow(_iw);
+                });
+                _iw.addEventListener("open", function () {
+                    _marker.getLabel().hide();
+                })
+                _iw.addEventListener("close", function () {
+                    _marker.getLabel().show();
+                })
+                label.addEventListener("click", function () {
+                    _marker.openInfoWindow(_iw);
+                })
+                if (!!json.isOpen) {
+                    label.hide();
+                    _marker.openInfoWindow(_iw);
+                }
+            })()
+        }
+    }
+    //创建InfoWindow
+    function createInfoWindow(i) {
+        var json = markerArr[i];
+        var iw = new BMap.InfoWindow("<b class='iw_poi_title' title='" + json.title + "'>" + json.title + "</b><div class='iw_poi_content'>" + json.content + "</div>");
+        return iw;
+    }
+    //创建一个Icon
+    function createIcon(json) {
+        var icon = new BMap.Icon("http://www.863cn.com/Images/logo.ico", new BMap.Size(json.w, json.h), { imageOffset: new BMap.Size(-json.l, -json.t), infoWindowOffset: new BMap.Size(json.lb + 5, 1), offset: new BMap.Size(json.x, json.h) })
+        return icon;
+    }
+
+    initMap();//创建和初始化地图
+    var obj = document.getElementById("l1")
+    obj.onclick = function () {
+        window.location.href = "file:///C:/Users/86137/OneDrive/%E6%A1%8C%E9%9D%A2/%E9%A1%B9%E7%9B%AE1/js/%E7%AB%99%E7%82%B9%E5%9C%B0%E5%9B%BE.html";
+    }
+    document.getElementById("l1").onmouseover = function () {
+        this.style.backgroundColor = "#00509c";
+    }
+    document.getElementById("l1").onmouseout = function () {
+        this.style.backgroundColor = "silver";
+    }
+    document.getElementById("l1").onclick = function () {
+        href = "http://127.0.0.1:5500/js/%E8%81%8C%E4%BD%8D%E6%8B%9B%E8%81%98.html";
+    }
+</script>
+<script>
+    $("#name").click(function () {
+        $(this).val("");
+        $(this).css("color", "");
+    })
+    $("#shouji").click(function () {
+        $(this).val("");
+        $(this).css("color", "");
+    })
+    $("#email").click(function () {
+        $(this).val("");
+        $(this).css("color", "");
+    })
+    $("#neirong").click(function () {
+        $(this).val("");
+        $(this).css("color", "");
+    })
+    $("#btn").click(function () {
+        var name = $("#name").val();
+        var shouji = $("#shouji").val();
+        var email = $("#email").val();
+        var neirong = $("#neirong").val();
+        var reg2 = /^1(3[0-9]|4[01456879]|5[0-35-9]|6[2567]|7[0-8]|8[0-9]|9[0-35-9])\d{8}$/;
+        var reg3 = /^\w+([-+.]\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*$/;
+        if (name === "") {
+            $("#name").val("名字不能为空！");
+            $("#name").css("color", "red");
+            return
+        }
+        if (shouji == "") {
+            $("#shouji").val("手机号码不能为空！");
+            $("#shouji").css("color", "red");
+            return
+        }
+        else if (!reg2.test(shouji)) {
+            $("#shouji").val("输入的手机号码格式不对！");
+            $("#shouji").css("color", "red");
+            return
+        }
+        if (email == "") {
+            $("#email").val("邮箱不能为空！");
+            $("#email").css("color", "red");
+            return
+        }
+        else if (!reg3.test(email)) {
+            $("#email").val("输入的邮箱格式不对！");
+            $("#email").css("color", "red");
+            return
+        }
+        if (neirong == "") {
+            $("#neirong").val("内容不能为空！");
+            $("#neirong").css("color", "red");
+            return
+        }
+        alert("恭喜你！提交成功");
+    })
+</script>
+
+</html>
